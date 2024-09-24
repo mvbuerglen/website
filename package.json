@@ -25,7 +25,9 @@
     "check": "pnpm run \"/^check:.*/\""
   },
   "dependencies": {
-    "astro": "4.15.9"
+    "astro": "4.15.9",
+    "autoprefixer": "10.4.20",
+    "unocss": "0.62.4"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.3",
