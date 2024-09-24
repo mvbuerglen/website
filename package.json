@@ -1,0 +1,39 @@
+{
+  "name": "mv-buerglen",
+  "type": "module",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sergey Shishkin",
+    "email": "sergey@shishkin.org",
+    "url": "https://shishkin.org"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check:prettier": "prettier . --check",
+    "check:tsc": "tsc --noEmit",
+    "check:astro": "astro check",
+    "check": "pnpm run \"/^check:.*/\""
+  },
+  "dependencies": {
+    "astro": "4.15.9"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.3",
+    "@types/node": "20.16.6",
+    "husky": "9.1.1",
+    "prettier": "3.3.3",
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "5.6.2"
+  },
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
+}
