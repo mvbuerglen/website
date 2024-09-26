@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  @apply box-border m-0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  @apply block max-w-full;
+}

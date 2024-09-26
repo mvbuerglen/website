@@ -1,0 +1,7 @@
+nav ul {
+  @apply list-none pl-0 flex flex-wrap gap-4;
+}
+
+nav a {
+  @apply heading;
+}
