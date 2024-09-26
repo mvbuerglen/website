@@ -1,10 +1,15 @@
 ---
+import { Picture } from "astro:assets";
+import Cover from "~/assets/images/winterkonzert-2023.jpg";
+import Logo from "~/components/Logo.astro";
 import "~/styles/main.css";
 
 export interface Props {
   title?: string;
+  frontmatter?: Record<string, any>;
 }
-const { title = "Musikverein Bürglen" } = Astro.props;
+
+const title = Astro.props.title ?? Astro.props.frontmatter?.title ?? "Musikverein Bürglen";
 ---
 
 <!doctype html>
@@ -16,6 +21,71 @@ const { title = "Musikverein Bürglen" } = Astro.props;
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <slot />
+    <header>
+      <Logo />
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/anlaesse">Anlässe</a></li>
+          <li><a href="/verein">Verein</a></li>
+          <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <Picture src={Cover} alt="Musikverein Bürglen" class="cover" />
+    <main>
+      <article class="prose text-lg">
+        <slot />
+      </article>
+    </main>
+    <footer class="invert-colors">
+      <section>
+        <h3>Musikverein Bürglen</h3>
+        <p>6463 Bürglen UR</p>
+        <p>E-Mail: <a href="mailto:mvb@mv-buerglen.ch">mvb@mv-buerglen.ch</a></p>
+      </section>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/kontakt">Kontakt</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
   </body>
 </html>
+<style>
+  html {
+    @apply min-h-screen;
+  }
+
+  body {
+    @apply min-h-screen flex flex-col;
+  }
+
+  header {
+    @apply wide-container flex flex-wrap gap-4 items-center justify-between text-xl;
+
+    & nav {
+      @apply flex-grow-0;
+    }
+  }
+
+  .cover {
+    @apply max-w-full w-auto h-auto object-contain;
+  }
+
+  main {
+    @apply wide-container my-12 flex-grow;
+  }
+
+  footer {
+    @apply filled-container flex-shrink-0 flex flex-wrap gap-4 justify-between py-20;
+
+    & nav ul {
+      @apply flex-col;
+    }
+  }
+</style>
