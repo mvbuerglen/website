@@ -27,6 +27,7 @@
   "dependencies": {
     "astro": "4.15.9",
     "autoprefixer": "10.4.20",
+    "sharp": "0.33.5",
     "unocss": "0.62.4"
   },
   "devDependencies": {

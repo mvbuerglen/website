@@ -13,6 +13,12 @@ export default defineConfig<Theme>({
     colors: {
       primary: theme.colors?.cyan!,
     },
+    width: {
+      "8xl": "96rem",
+    },
+    maxWidth: {
+      "8xl": "96rem",
+    },
   },
   rules: [
     [
@@ -25,6 +31,16 @@ export default defineConfig<Theme>({
          * default spacing (1rem) as horizontal padding.
          */
         "padding-inline": `max(${theme.spacing?.DEFAULT}, calc((100% - ${theme.width?.["6xl"]}) / 2 + ${theme.spacing?.DEFAULT}))`,
+      }),
+    ],
+    [
+      /^wide-image$/,
+      (_, { theme }) => ({
+        "max-width": `min(${theme.width?.["8xl"]}, 100%)`,
+        width: "auto",
+        height: "auto",
+        "margin-inline": "auto",
+        "object-fit": "contain",
       }),
     ],
   ],
