@@ -1,22 +1,33 @@
 ---
 import Layout from "~/layouts/Markdown.astro";
 import { getCollection } from "astro:content";
+import { formatDateTime, utcToLocalTime } from "~/components/time.js";
 
 export async function getStaticPaths() {
-  const concerts = await getCollection("anlaesse");
+  const items = await getCollection("anlaesse");
 
-  return concerts.map((entry) => ({
+  return items.map((item) => ({
     params: {
-      slug: entry.slug,
+      slug: item.slug,
     },
-    props: { entry },
+    props: { item },
   }));
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { item } = Astro.props;
+const { Content } = await item.render();
+const localDate = utcToLocalTime(item.data.datum);
 ---
 
-<Layout frontmatter={entry.data}>
+<Layout frontmatter={item.data}>
+  <h2>{item.data.title}</h2>
+  <p>
+    <time datetime={localDate.toISOString()}>{formatDateTime(localDate)}</time> in {item.data.ort}
+  </p>
   <Content />
 </Layout>
+<style>
+  p {
+    @apply text-gray uppercase;
+  }
+</style>
