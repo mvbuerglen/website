@@ -1,0 +1,36 @@
+local_backend: true
+
+locale: de
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: src/assets/images
+
+collections:
+  - name: anlaesse
+    label: Anlässe
+    label_singular: Anlass
+    folder: src/content/anlaesse
+    create: true
+    slug: "{{year}}-{{slug}}"
+    preview_path_date_field: datum
+    fields:
+      - label: Titel
+        name: title
+        widget: string
+        hint: z.B. Winterkonzert
+      - label: Datum
+        name: datum
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZZ"
+        picker_utc: false
+        hint: Datum und lokale Uhrzeit
+      - label: Ort
+        name: ort
+        widget: string
+        hint: z.B. Aula Bürglen
+      - label: Inhalt
+        name: body
+        widget: markdown
