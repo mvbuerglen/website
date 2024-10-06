@@ -1,6 +1,6 @@
 ---
 title: Jahreskonzert 2024
-datum: 2024-05-25T20:00:00
+datum: 2024-05-25T20:00:00+0200
 ort: Aula Bürglen
 ---
 

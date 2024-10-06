@@ -1,29 +1,22 @@
-import { subMinutes } from "date-fns";
-import { TZDate, tzOffset } from "@date-fns/tz";
-
+const locale = "de-CH";
 const localTZ = "Europe/Zurich";
 
-export function utcToLocalTime(date: Date): Date {
-  const utc = new TZDate(date, "UTC");
-  return subMinutes(utc, tzOffset(localTZ, utc)).withTimeZone(localTZ);
-}
-
 export function formatDate(local: Date): string {
-  return local.toLocaleDateString("de-CH", {
+  return local.toLocaleDateString(locale, {
     dateStyle: "medium",
     timeZone: localTZ,
   });
 }
 
 export function formatTime(local: Date): string {
-  return local.toLocaleTimeString("de-CH", {
+  return local.toLocaleTimeString(locale, {
     timeStyle: "short",
     timeZone: localTZ,
   });
 }
 
 export function formatDateTime(local: Date): string {
-  return local.toLocaleString("de-CH", {
+  return local.toLocaleString(locale, {
     dateStyle: "long",
     timeStyle: "short",
     timeZone: localTZ,
