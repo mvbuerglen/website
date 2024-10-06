@@ -5,7 +5,7 @@ export const collections = {
     type: "content",
     schema: z.object({
       title: z.string(),
-      datum: z.date(),
+      datum: z.string().transform((s) => new Date(s)),
       ort: z.string(),
     }),
   }),

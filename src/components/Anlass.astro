@@ -1,13 +1,13 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { utcToLocalTime, formatDate, formatTime } from "./time.js";
+import { formatDate, formatTime } from "./time.js";
 
 export interface Props {
   item: CollectionEntry<"anlaesse">;
 }
 
 const { item } = Astro.props;
-const localDate = utcToLocalTime(item.data.datum);
+const localDate = item.data.datum;
 ---
 
 <p>

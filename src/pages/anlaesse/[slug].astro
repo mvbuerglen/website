@@ -1,7 +1,7 @@
 ---
 import Layout from "~/layouts/Markdown.astro";
 import { getCollection } from "astro:content";
-import { formatDateTime, utcToLocalTime } from "~/components/time.js";
+import { formatDateTime } from "~/components/time.js";
 
 export async function getStaticPaths() {
   const items = await getCollection("anlaesse");
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 const { item } = Astro.props;
 const { Content } = await item.render();
-const localDate = utcToLocalTime(item.data.datum);
+const localDate = item.data.datum;
 ---
 
 <Layout frontmatter={item.data}>
