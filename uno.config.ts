@@ -19,6 +19,10 @@ export default defineConfig<Theme>({
     maxWidth: {
       "8xl": "96rem",
     },
+    boxShadow: {
+      DEFAULT: "var(--un-shadow-inset) 0 2px 16px 4px rgb(0 0 0 / 0.1)",
+      sm: "var(--un-shadow-inset) 0 2px 16px -2px rgb(0 0 0 / 0.1)",
+    },
   },
   rules: [
     [
@@ -47,5 +51,6 @@ export default defineConfig<Theme>({
   shortcuts: {
     "wide-container": "w-full max-w-6xl mx-auto px-4",
     heading: "font-light uppercase font-stretch-semi-condensed",
+    "overlay-link": "after:absolute after:content-empty after:inset-0 after:z-1",
   },
 });

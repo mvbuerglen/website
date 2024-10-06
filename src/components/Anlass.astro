@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { utcToLocalTime, formatDate, formatTime } from "./time.js";
+
+export interface Props {
+  item: CollectionEntry<"anlaesse">;
+}
+
+const { item } = Astro.props;
+const localDate = utcToLocalTime(item.data.datum);
+---
+
+<p>
+  <time datetime={localDate.toISOString()}>{formatDate(localDate)}</time>
+</p>
+<a href={`/anlaesse/${item.slug}`} class:list={["overlay-link"]}><h3>{item.data.title}</h3></a>
+<p>
+  <time datetime={localDate.toISOString()}>{formatTime(localDate)}</time> in {item.data.ort}
+</p>
+<style>
+  p:first-child {
+    @apply text-gray;
+  }
+
+  h3 {
+    @apply mt-4 mb-2;
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-layout: "~/layouts/Markdown.astro"
+layout: "~/layouts/Index.astro"
 title: "Musikverein Bürglen"
 ---
 

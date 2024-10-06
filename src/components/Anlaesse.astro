@@ -1,15 +1,49 @@
 ---
 import { getCollection } from "astro:content";
+import Anlass from "./Anlass.astro";
+import Card from "./Card.astro";
 
-const items = await getCollection("anlaesse");
+export interface Props {
+  mode: "all" | "upcoming" | "past";
+  title?: string;
+  count?: number;
+}
+
+const { mode, count, title = "Anlässe" } = Astro.props;
+
+const items = (
+  await getCollection(
+    "anlaesse",
+    (item) =>
+      (mode === "upcoming" && item.data.datum > new Date()) ||
+      (mode === "past" && item.data.datum < new Date()) ||
+      mode === "all",
+  )
+)
+  .sort((a, b) => b.data.datum.getTime() - a.data.datum.getTime())
+  .slice(0, count);
 ---
 
-<ul>
-  {
-    items.map((item) => (
-      <li>
-        <a href={`/anlaesse/${item.slug}`}>{item.data.title}</a>
-      </li>
-    ))
+{
+  !!items.length && (
+    <>
+      <h2>{title}</h2>
+      <section>
+        {items.map((item) => (
+          <Card>
+            <Anlass item={item} />
+          </Card>
+        ))}
+      </section>
+    </>
+  )
+}
+<style>
+  h2 {
+    @apply mt-1.75em mb-0.5em;
   }
-</ul>
+  section {
+    @apply my-4 grid gap-4 items-stretch;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  }
+</style>

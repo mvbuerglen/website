@@ -25,8 +25,10 @@
     "check": "pnpm run \"/^check:.*/\""
   },
   "dependencies": {
+    "@date-fns/tz": "1.1.2",
     "astro": "4.15.9",
     "autoprefixer": "10.4.20",
+    "date-fns": "4.1.0",
     "sharp": "0.33.5",
     "unocss": "0.62.4"
   },
