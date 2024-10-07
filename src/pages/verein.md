@@ -1,8 +1,7 @@
 ---
-layout: "~/layouts/Markdown.astro"
-title: "Verein"
+title: Verein
+layout: ~/layouts/Markdown.astro
 ---
-
 ## Vorstand
 
 Emil Walker, Präsident | Beat Spitzer | Evi Imhof | Sascha Herger | Stefanie Arnold

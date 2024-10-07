@@ -1,8 +1,7 @@
 ---
-layout: "~/layouts/Markdown.astro"
-title: "Kontakt"
+title: Kontakt
+layout: ~/layouts/Markdown.astro
 ---
-
 ## Kontakt
 
 Musikverein Bürglen<br/>

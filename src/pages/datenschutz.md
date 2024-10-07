@@ -1,8 +1,7 @@
 ---
-layout: "~/layouts/Markdown.astro"
-title: "Datenschutz"
+title: Datenschutz
+layout: ~/layouts/Markdown.astro
 ---
-
 ## Datenschutz
 
 Diese Webseite erhebt keine Daten.

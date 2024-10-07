@@ -8,14 +8,45 @@ backend:
 
 media_folder: src/assets/images
 
+show_preview_links: false
+search: false
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
+  - name: seiten
+    label: Seiten
+    label_singular: Seite
+    identifier_field: title
+    folder: src/pages
+    create: false
+    delete: false
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: Titel
+        name: title
+        widget: hidden
+      - label: Layout
+        name: layout
+        widget: hidden
+      - label: Inhalt
+        name: body
+        widget: markdown
   - name: anlaesse
     label: Anlässe
     label_singular: Anlass
     folder: src/content/anlaesse
     create: true
+    delete: true
     slug: "{{year}}-{{slug}}"
-    preview_path_date_field: datum
+    editor:
+      preview: false
     fields:
       - label: Titel
         name: title
@@ -34,3 +65,8 @@ collections:
       - label: Inhalt
         name: body
         widget: markdown
+    sortable_fields: ["datum", "title"]
+    view_groups:
+      - label: Jahr
+        field: datum
+        pattern: \d{4}
