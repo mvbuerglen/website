@@ -35,6 +35,15 @@ collections:
       - label: Layout
         name: layout
         widget: hidden
+      - label: Bild
+        name: bild
+        widget: image
+        required: false
+        allow_multiple: true
+        choose_url: false
+        media_library:
+          config:
+            max_file_size: 1048576 # 1MB
       - label: Inhalt
         name: body
         widget: markdown
@@ -44,7 +53,7 @@ collections:
     folder: src/content/anlaesse
     create: true
     delete: true
-    slug: "{{year}}-{{slug}}"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
@@ -62,6 +71,15 @@ collections:
         name: ort
         widget: string
         hint: z.B. Aula Bürglen
+      - label: Bild
+        name: bild
+        widget: image
+        required: false
+        allow_multiple: false
+        choose_url: false
+        media_library:
+          config:
+            max_file_size: 1048576 # 1MB
       - label: Inhalt
         name: body
         widget: markdown
