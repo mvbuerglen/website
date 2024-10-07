@@ -1,14 +1,17 @@
 ---
-import { Picture } from "astro:assets";
-import Cover from "~/assets/images/winterkonzert-2023.jpg";
+import CoverImage from "~/components/CoverImage.astro";
 import Logo from "~/components/Logo.astro";
 import "~/styles/main.css";
 
 export interface Props {
   title?: string;
+  image?: string;
 }
 
-const { title = "Musikverein Bürglen" } = Astro.props;
+const { title = "Musikverein Bürglen", image } = Astro.props;
+
+// image from Markdown can be an empty string:
+const imageSrc = image?.length ? image : "/src/assets/images/winterkonzert-2023.jpg";
 ---
 
 <!doctype html>
@@ -31,13 +34,7 @@ const { title = "Musikverein Bürglen" } = Astro.props;
         </ul>
       </nav>
     </header>
-    <Picture
-      src={Cover}
-      alt="Musikverein Bürglen"
-      class="wide-image"
-      widths={[640, 1024, 1280, 1536]}
-      sizes={`(max-width: 640px) 640px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px`}
-    />
+    <CoverImage src={imageSrc} alt={title} />
     <main>
       <slot />
     </main>
