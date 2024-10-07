@@ -1,9 +1,8 @@
-local_backend: true
-
 locale: de
 
 backend:
-  name: git-gateway
+  name: github
+  repo: mvbuerglen/website
   branch: main
 
 media_folder: src/assets/images
