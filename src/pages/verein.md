@@ -1,6 +1,7 @@
 ---
 title: Verein
 layout: ~/layouts/Markdown.astro
+bild: /src/assets/images/musikanten-1.jpg
 ---
 ## Vorstand
 
