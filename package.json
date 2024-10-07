@@ -31,7 +31,7 @@
     "autoprefixer": "10.4.20",
     "date-fns": "4.1.0",
     "sharp": "0.33.5",
-    "unocss": "0.62.4"
+    "unocss": "0.63.3"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.3",
