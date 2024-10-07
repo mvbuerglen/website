@@ -1,8 +1,7 @@
 ---
-layout: "~/layouts/Index.astro"
-title: "Musikverein Bürglen"
+title: Musikverein Bürglen
+layout: ~/layouts/Index.astro
 ---
-
 Herzlich Willkommen beim Musikverein Bürglen!
 Der Musikverein Bürglen wurde im Jahre 1917 gegründet.
 Wir spielen in Harmoniebesetzung in der 2. Stärkeklasse.

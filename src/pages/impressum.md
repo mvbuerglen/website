@@ -1,6 +1,5 @@
 ---
-layout: "~/layouts/Markdown.astro"
-title: "Impressum"
+title: Impressum
+layout: ~/layouts/Markdown.astro
 ---
-
 ## Impressum
