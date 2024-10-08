@@ -1,8 +1,7 @@
 locale: de
 
 backend:
-  name: github
-  repo: mvbuerglen/website
+  name: git-gateway
   branch: main
 
 media_folder: src/assets/images
