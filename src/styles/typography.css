@@ -41,3 +41,19 @@ a {
     @apply text-white;
   }
 }
+
+.column-layout {
+  @apply wide-container columns-[12rem_auto] gap-col-16 p-bs-1.5em;
+
+  & section {
+    @apply break-inside-avoid;
+
+    & + section {
+      @apply m-bs-1.5em;
+    }
+
+    & > *:is(h1, h2, h3, h4, h5, h6) {
+      @apply m-bs-0;
+    }
+  }
+}

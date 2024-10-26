@@ -26,6 +26,13 @@ export default defineConfig<Theme>({
   },
   rules: [
     [
+      /^wide-container$/,
+      (_, { theme }) => ({
+        width: `min(${theme.width?.["6xl"]}, calc(100vw - 2 * ${theme.spacing?.DEFAULT}))`,
+        "margin-inline": "auto",
+      }),
+    ],
+    [
       /^filled-container$/,
       (_, { theme }) => ({
         width: "100%",
@@ -49,7 +56,6 @@ export default defineConfig<Theme>({
     ],
   ],
   shortcuts: {
-    "wide-container": "w-full max-w-6xl mx-auto px-4",
     heading: "font-light uppercase font-stretch-semi-condensed",
     "overlay-link": "after:absolute after:content-empty after:inset-0 after:z-1",
   },
