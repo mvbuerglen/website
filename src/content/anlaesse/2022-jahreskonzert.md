@@ -2,7 +2,8 @@
 title: Jahreskonzert 2022
 datum: 2022-04-30T20:00:00+0200
 ort: Aula Bürglen
-bild: /src/assets/images/flyer-jahreskonzert-2022.jpg
+bild:
+  - /src/assets/images/flyer-jahreskonzert-2022.jpg
 ---
 
 Der Musikverein Bürglen lädt Sie herzlich zum diesjährigen Jahreskonzert ein.

@@ -1,7 +1,11 @@
 ---
 title: Musikverein Bürglen
 layout: ~/layouts/Index.astro
+bild:
+  - /src/assets/images/jahreskonzert-2024.jpg
+  - /src/assets/images/winterkonzert-2023.jpg
 ---
+
 Herzlich Willkommen beim Musikverein Bürglen!
 Der Musikverein Bürglen wurde im Jahre 1917 gegründet.
 Wir spielen in Harmoniebesetzung in der 2. Stärkeklasse.

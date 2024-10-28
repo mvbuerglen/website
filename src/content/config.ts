@@ -7,7 +7,7 @@ export const collections = {
       title: z.string(),
       datum: z.string().transform((s) => new Date(s)),
       ort: z.string(),
-      bild: z.string().optional(),
+      bild: z.array(z.string()).optional(),
     }),
   }),
 };

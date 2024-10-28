@@ -1,7 +1,8 @@
 ---
 title: Impressum
 layout: ~/layouts/Markdown.astro
-bild: /src/assets/images/musikanten-1.jpg
+bild:
+  - /src/assets/images/musikanten-1.jpg
 ---
 
 ## Impressum

@@ -34,15 +34,23 @@ collections:
       - label: Layout
         name: layout
         widget: hidden
-      - label: Bild
+      - label: Bilder
         name: bild
-        widget: image
         required: false
-        allow_multiple: true
-        choose_url: false
-        media_library:
-          config:
-            max_file_size: 1048576 # 1MB
+        widget: "list"
+        max: 10
+        min: 0
+        collapsed: false
+        field:
+          name: bild
+          widget: image
+          label_singular: Bild
+          required: true
+          allow_multiple: false
+          choose_url: false
+          media_library:
+            config:
+              max_file_size: 1048576 # 1MB
       - label: Inhalt
         name: body
         widget: markdown
@@ -70,18 +78,27 @@ collections:
         name: ort
         widget: string
         hint: z.B. Aula Bürglen
-      - label: Bild
+      - label: Bilder
         name: bild
-        widget: image
         required: false
-        allow_multiple: false
-        choose_url: false
-        media_library:
-          config:
-            max_file_size: 1048576 # 1MB
+        widget: "list"
+        max: 10
+        min: 0
+        collapsed: false
+        field:
+          name: bild
+          label_singular: Bild
+          widget: image
+          required: true
+          allow_multiple: false
+          choose_url: false
+          media_library:
+            config:
+              max_file_size: 1048576 # 1MB
       - label: Inhalt
         name: body
         widget: markdown
+        required: false
     sortable_fields: ["datum", "title"]
     view_groups:
       - label: Jahr

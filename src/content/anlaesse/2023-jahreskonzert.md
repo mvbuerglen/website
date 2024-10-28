@@ -2,7 +2,8 @@
 title: Jahreskonzert 2023
 datum: 2023-05-27T20:00:00+0200
 ort: Aula Bürglen
-bild: /src/assets/images/flyer-jahreskonzert-2023.jpg
+bild:
+  - /src/assets/images/flyer-jahreskonzert-2023.jpg
 ---
 
 Der Musikverein Bürglen lädt herzlich zum diesjährigen Jahreskonzert ein.

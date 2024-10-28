@@ -1,17 +1,18 @@
 ---
-import CoverImage from "~/components/CoverImage.astro";
+import Carousel from "~/components/Carousel.astro";
 import Logo from "~/components/Logo.astro";
 import "~/styles/main.css";
 
 export interface Props {
   title?: string;
-  image?: string;
+  images?: string[];
 }
 
-const { title = "Musikverein Bürglen", image } = Astro.props;
+const { title = "Musikverein Bürglen", images = ["/src/assets/images/winterkonzert-2023.jpg"] } =
+  Astro.props;
 
 // image from Markdown can be an empty string:
-const imageSrc = image?.length ? image : "/src/assets/images/winterkonzert-2023.jpg";
+const imageSrcs = images.filter((s) => s.length);
 ---
 
 <!doctype html>
@@ -34,7 +35,7 @@ const imageSrc = image?.length ? image : "/src/assets/images/winterkonzert-2023.
         </ul>
       </nav>
     </header>
-    <CoverImage src={imageSrc} alt={title} />
+    <Carousel images={imageSrcs} />
     <main>
       <slot />
     </main>

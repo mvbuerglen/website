@@ -1,9 +1,10 @@
 ---
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import { getImage } from "./images.js";
 
 export interface Props {
-  src: string;
+  src: string | ImageMetadata;
   alt?: string;
   // Full height will cover its container.
   // Auto height will retain image aspect ratio.
@@ -11,7 +12,7 @@ export interface Props {
 }
 
 const { src, alt = "", height } = Astro.props;
-const image = await getImage(src);
+const image = typeof src === "string" ? await getImage(src) : src;
 ---
 
 <Image

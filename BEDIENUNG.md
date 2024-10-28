@@ -31,7 +31,8 @@ Fotos und andere Bilder können im Bereich "Medien" verwaltet werden.
 1. Wähle "Seiten" im "Inhaltstypen"-Menü.
 2. Wähle die Seite, die du bearbeiten möchtest, aus der Liste aus.
 3. Bearbeite den Inhalt der Seite im "Inhalt"-Widget.
-4. Optional kannst du über das "Bild"-Widget ein neues Bild auswählen oder hochladen, das auf der Seite angezeigt werden soll.
+4. Optional kannst du über das "Bilder"-Widget Bilder hinzufügen.
+   Mehrere Bilder (maximal 10) können ausgewählt oder hochgeladen werden.
 5. Klicke auf "Veröffentlichen" im oberen Menü und wähle die Option "Jetzt veröffentlichen".
 
 Falls für eine Seite kein Bild ausgewählt ist, wird ein Standardfoto angezeigt.

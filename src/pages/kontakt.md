@@ -1,8 +1,10 @@
 ---
 title: Kontakt
 layout: ~/layouts/Markdown.astro
-bild: /src/assets/images/jahreskonzert-2024.jpg
+bild:
+  - /src/assets/images/jahreskonzert-2024.jpg
 ---
+
 ## Kontakt
 
 Musikverein Bürglen<br/>

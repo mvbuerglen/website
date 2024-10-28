@@ -9,13 +9,13 @@ export interface Props {
   interval?: number;
 }
 
-const { images = ["/src/assets/images/winterkonzert-2023.jpg"], interval = 5 } = Astro.props;
+const { images, interval = 5 } = Astro.props;
 // Aspect ration of the first image will be used for all carousel images:
 const first = images.length ? await getImage(images[0]!) : undefined;
 const aspectRatio = first ? `${first.width}/${first.height}` : undefined;
 ---
 
-{images.length === 1 && <CoverImage src={first!.src} />}
+{images.length === 1 && <CoverImage src={first!} />}
 {
   images.length > 1 && (
     <div class="carousel" data-interval={interval}>
@@ -123,7 +123,6 @@ const aspectRatio = first ? `${first.width}/${first.height}` : undefined;
           const li = entry.target as HTMLElement;
           const list = li.parentElement!;
           current = [...list.children].indexOf(li);
-          console.log("set:", list.children.length, current);
           container.querySelectorAll<HTMLAnchorElement>(".controls a").forEach((a, i) => {
             a.classList.toggle("current", i === current);
             // Remove focus from non-current controls:

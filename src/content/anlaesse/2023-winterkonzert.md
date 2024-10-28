@@ -2,8 +2,10 @@
 title: Winterkonzert 2023
 datum: 2023-12-08T17:00:00+0100
 ort: Pfarrkirche Bürglen
-bild: /src/assets/images/flyer-winterkonzert-2023.jpg
+bild:
+  - /src/assets/images/flyer-winterkonzert-2023.jpg
 ---
+
 ## HERZLICH WILLKOMMEN
 
 Der Musikverein Bürglen lädt Sie herzlich zum Winterkonzert 2023 ein. Wir haben uns für dieses Jahr etwas Besonderes einfallen lassen. Wir musizieren zusammen mit dem Kinder- und Jugendchor der Musikschule Uri.
@@ -28,18 +30,18 @@ Der Kinder- und Jugendchor wird von Lea Ziegler Tschalèr und Eve Kopli Scheiber
 
 ### Musikverein Bürglen
 
-* "Intrada Eroica" von Bert Appermont
-* "Where Eagles Soar" von Steven Reineke
-* "Sentimentale" von Satoshi Yagisawa
-* "Rudolph, The Red-Nosed Reindeer" arr. Naohiro Iwai
-* "Gold von den Sternen" von Sylvester Levay / arr. Fritz Neuböck, Solistin: Eve Kopli Scheiber
+- "Intrada Eroica" von Bert Appermont
+- "Where Eagles Soar" von Steven Reineke
+- "Sentimentale" von Satoshi Yagisawa
+- "Rudolph, The Red-Nosed Reindeer" arr. Naohiro Iwai
+- "Gold von den Sternen" von Sylvester Levay / arr. Fritz Neuböck, Solistin: Eve Kopli Scheiber
 
 ### Musikverein Bürglen und Kinder- und Jugendchor der Musikschule Uri
 
-* Zwei Lieder aus «Heb di Blick zu de Sterne» von Barbara Suter-Kraft / arr. Hansjörg Römer
-* "All‘s gseht so friedlich uus" von Leandro Bisatz / arr. Hansjörg Römer
-* "Sgrööschte Gschänk vo de Wienacht" von Andrew Bond / arr. Hansjörg Römer
-* Drei Lieder aus «Zipf, Zapf, Zepf & Zipfelwitz» von Stephanie Jakobi-Murer / arr. Hansjörg Römer
-* "Tiliseb" von Otto Wirkhaus / arr. Hansjörg Römer
+- Zwei Lieder aus «Heb di Blick zu de Sterne» von Barbara Suter-Kraft / arr. Hansjörg Römer
+- "All‘s gseht so friedlich uus" von Leandro Bisatz / arr. Hansjörg Römer
+- "Sgrööschte Gschänk vo de Wienacht" von Andrew Bond / arr. Hansjörg Römer
+- Drei Lieder aus «Zipf, Zapf, Zepf & Zipfelwitz» von Stephanie Jakobi-Murer / arr. Hansjörg Römer
+- "Tiliseb" von Otto Wirkhaus / arr. Hansjörg Römer
 
 Eintritt frei, Türkollekte

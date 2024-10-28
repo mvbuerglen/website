@@ -8,7 +8,7 @@ export interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={frontmatter.title} image={frontmatter.bild}>
+<Layout title={frontmatter.title} images={frontmatter.bild}>
   <article class="prose text-lg">
     <slot />
   </article>
