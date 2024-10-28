@@ -47,11 +47,8 @@ export default defineConfig<Theme>({
     [
       /^wide-image$/,
       (_, { theme }) => ({
-        "max-width": `min(${theme.width?.["8xl"]}, 100%)`,
-        width: "auto",
-        height: "auto",
+        width: `min(${theme.width?.["8xl"]}, 100vw)`,
         "margin-inline": "auto",
-        "object-fit": "contain",
       }),
     ],
   ],

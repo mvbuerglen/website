@@ -1,27 +1,28 @@
 ---
-import { Picture } from "astro:assets";
-import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import { getImage } from "./images.js";
 
 export interface Props {
   src: string;
   alt?: string;
+  // Full height will cover its container.
+  // Auto height will retain image aspect ratio.
+  height?: "auto" | "full";
 }
 
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/images/*.{jpeg,jpg,png,gif}",
-);
-const { src, alt = "" } = Astro.props;
-const imageGetter = images[src];
-if (!imageGetter) {
-  throw new Error(`Image ${src} not found.`);
-}
-const { default: image } = await imageGetter();
+const { src, alt = "", height } = Astro.props;
+const image = await getImage(src);
 ---
 
-<Picture
+<Image
   src={image}
   alt={alt}
-  class="wide-image"
+  class:list={{
+    "wide-image": true,
+    "h-auto": height !== "full",
+    "h-full": height === "full",
+    "object-cover": true,
+  }}
   widths={[640, 1024, 1280, 1536]}
   sizes={`(max-width: 640px) 640px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px`}
 />
