@@ -1,0 +1,157 @@
+---
+import CoverImage from "./CoverImage.astro";
+import { getImage } from "./images.js";
+
+export interface Props {
+  // Image URLs.
+  images: string[];
+  // Auto-rotation interval in seconds.
+  interval?: number;
+}
+
+const { images = ["/src/assets/images/winterkonzert-2023.jpg"], interval = 5 } = Astro.props;
+// Aspect ration of the first image will be used for all carousel images:
+const first = images.length ? await getImage(images[0]!) : undefined;
+const aspectRatio = first ? `${first.width}/${first.height}` : undefined;
+---
+
+{images.length === 1 && <CoverImage src={first!.src} />}
+{
+  images.length > 1 && (
+    <div class="carousel" data-interval={interval}>
+      <ul class="items no-scrollbar">
+        {images.map((image) => (
+          <li style={{ "aspect-ratio": aspectRatio }}>
+            <CoverImage src={image} height="full" />
+          </li>
+        ))}
+      </ul>
+      <ul class="controls">
+        {images.map((_src) => (
+          <li>
+            <a href="#" />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+<style>
+  .carousel {
+    @apply wide-image relative;
+
+    & ul.items {
+      @apply list-none pl-0 w-full flex overflow-x-auto snap-x snap-mandatory scroll-smooth;
+
+      & li {
+        @apply wide-image flex-shrink-0 flex-grow-0 snap-center snap-always;
+      }
+    }
+
+    & ul.controls {
+      @apply list-none pl-0 absolute bottom-4 left-0 right-0 flex justify-center gap-4;
+
+      & a {
+        @apply inline-block w-4 h-4 rounded-50% bg-gray border-solid border-gray border-1 shadow-sm shadow-white opacity-60 transition-property-all transition-duration-200;
+
+        &:focus,
+        &:hover,
+        &.current {
+          @apply opacity-100 bg-white;
+        }
+      }
+    }
+  }
+</style>
+<script>
+  document.querySelectorAll<HTMLDivElement>(".carousel").forEach((container) => {
+    // Parse auto-rotation interval:
+    const interval = Number.parseInt(container.dataset.interval ?? "5") * 1000;
+    // Store currently visible carousel item:
+    let current = 0;
+    // Flag to pause carousel auto-rotation:
+    let pause = false;
+
+    /**
+     * Scrolls carousel by 0-based index.
+     * Index can overflow and will loop over.
+     */
+    function scrollTo(index: number) {
+      const items = container.querySelector<HTMLUListElement>(".items")!;
+      const count = items.childElementCount;
+      current = index % count;
+      const width = items.scrollWidth;
+      const one = width / count;
+      items.scroll({
+        left: index * one,
+        behavior: "smooth",
+      });
+    }
+
+    // Trigger scrolling of the first element to update controls:
+    scrollTo(current);
+
+    // Setup auto-rotation:
+    const timer = setInterval(() => {
+      if (!pause) {
+        scrollTo(current + 1);
+      }
+    }, interval);
+
+    // Pause auto-rotation when user moves mouse inside carousel:
+    container.addEventListener("mouseenter", () => {
+      pause = true;
+    });
+    container.addEventListener("mouseleave", () => {
+      pause = false;
+    });
+
+    // Stop auto-rotation when user manually scrolls:
+    const stopTimer = () => {
+      clearInterval(timer);
+    };
+    container.addEventListener("wheel", stopTimer);
+    container.addEventListener("touchmove", stopTimer);
+    // `mousedown` is touch workaround for Safari:
+    container.addEventListener("mousedown", stopTimer);
+
+    // Observe items scrolled into view and update current state.
+    // This helps to update state also for scrolling done by user.
+    const observer = new IntersectionObserver(
+      (entries, _opts) => {
+        entries.forEach((entry) => {
+          const li = entry.target as HTMLElement;
+          const list = li.parentElement!;
+          current = [...list.children].indexOf(li);
+          console.log("set:", list.children.length, current);
+          container.querySelectorAll<HTMLAnchorElement>(".controls a").forEach((a, i) => {
+            a.classList.toggle("current", i === current);
+            // Remove focus from non-current controls:
+            // This may happen when user clicks on one dot and then scrolls.
+            if (document.activeElement === a && i !== current) {
+              a.blur();
+            }
+          });
+        });
+      },
+      {
+        root: container,
+        threshold: 0.6,
+      },
+    );
+    container.querySelectorAll<HTMLElement>(".items li").forEach((li) => observer.observe(li));
+
+    // Wire control dots click event:
+    container.querySelectorAll<HTMLAnchorElement>(".controls a").forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Also stop auto-rotation:
+        stopTimer();
+        const li = button.parentElement!;
+        const list = li.parentElement!;
+        const i = [...list.children].indexOf(li);
+        scrollTo(i);
+      });
+    });
+  });
+</script>
