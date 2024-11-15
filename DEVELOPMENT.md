@@ -26,7 +26,7 @@ The project is setup on [GitHub](https://github.com/mvbuerglen/website) in its o
 Netlify will automatically deploy code from the `main` branch.
 Dependabot is setup to update depencies once a week.
 
-TODO: Trigger deployment daily to ensure correct rendering of past and upcoming concerts
+Deployment is triggered nightly to ensure correct rendering of past and upcoming concerts.
 
 ## Resources
 

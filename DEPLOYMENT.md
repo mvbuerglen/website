@@ -3,6 +3,7 @@
 The website is deployed to [Netlify platform](https://netlify.com/) as a static website.
 The website runs in a free-tier starter plan.
 Basic setup just points to a GitHub repo and follows the wizard to configure an Astro website.
+Deployment is triggered nightly by GitHub Actions [workflow](.github/workflows/nightly.yaml) using a Netlify build hook to ensure correct rendering of past and upcoming concerts.
 
 ## DNS
 
