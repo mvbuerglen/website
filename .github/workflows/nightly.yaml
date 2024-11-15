@@ -3,6 +3,7 @@ name: Nightly build
 on:
   schedule:
     - cron: "0 1 * * *"
+  workflow_dispatch:
 
 env:
   TZ: "Europe/Zurich"
