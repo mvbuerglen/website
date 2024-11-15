@@ -1,0 +1,18 @@
+name: Nightly build
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+
+env:
+  TZ: "Europe/Zurich"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Build
+        env:
+          NETLIFY_HOOK: ${{ secrets.NETLIFY_HOOK }}
+        run: |
+          curl -X POST -i -d '{}' "$NETLIFY_HOOK"
