@@ -2,7 +2,9 @@
 title: Impressum
 layout: ~/layouts/Markdown.astro
 bild:
-  - /src/assets/images/musikanten-1.jpg
+  - /src/assets/images/jahreskonzert-2024.jpg
+  - /src/assets/images/jahreskonzert-2024-2.jpg
+  - /src/assets/images/jahreskonzert-2023-1.jpg
 ---
 
 ## Impressum

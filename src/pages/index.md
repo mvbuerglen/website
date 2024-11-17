@@ -2,8 +2,9 @@
 title: Musikverein Bürglen
 layout: ~/layouts/Index.astro
 bild:
-  - /src/assets/images/jahreskonzert-2024.jpg
   - /src/assets/images/winterkonzert-2023.jpg
+  - /src/assets/images/winterkonzert-2023-2.jpg
+  - /src/assets/images/winterkonzert-2023-4.jpg
 ---
 
 Herzlich Willkommen beim Musikverein Bürglen!

@@ -4,6 +4,8 @@ datum: 2024-05-25T20:00:00+0200
 ort: Aula Bürglen
 bild:
   - /src/assets/images/mvb-flyer-bild.jpg
+  - /src/assets/images/jahreskonzert-2024-2.jpg
+  - /src/assets/images/jahreskonzert-2024.jpg
 ---
 
 Der Musikverein Bürglen lädt Sie herzlich zum Jahreskonzert 2024 ein.
