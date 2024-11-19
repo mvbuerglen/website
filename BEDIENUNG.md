@@ -8,7 +8,7 @@ Benutzer können jeweils nur eine Seite gleichzeitig bearbeiten.
 
 ## Authentifizierung
 
-Um Website-Inhalte zu bearbeiten, navigiere mit deinem Browser zum [Administrationsbereich](https://mvbuerglen-beta.netlify.app/admin/) der Website.
+Um Website-Inhalte zu bearbeiten, navigiere mit deinem Browser zum [Administrationsbereich](https://mv-buerglen.ch/admin/) der Website.
 Falls du noch nicht eingeloggt bist, klicke auf "Mit GitHub einloggen" und folge dem GitHub-Authentifizierungsverfahren.
 
 ## Navigation

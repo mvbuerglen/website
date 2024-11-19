@@ -1,6 +1,6 @@
 # mv-buerglen.ch
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2bcc59f9-d4ff-46e5-83a6-894c63c83034/deploy-status?branch=main)](https://app.netlify.com/sites/mvbuerglen-beta/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2bcc59f9-d4ff-46e5-83a6-894c63c83034/deploy-status?branch=main)](https://app.netlify.com/sites/mvbuerglen/deploys)
 
 Website of Musikverein Bürglen.
 
