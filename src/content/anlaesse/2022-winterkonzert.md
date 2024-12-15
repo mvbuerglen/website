@@ -3,7 +3,7 @@ title: Winterkonzert 2022
 datum: 2022-12-08T17:00:00+0100
 ort: Pfarrkirche Bürglen
 bild:
-  - /src/assets/images/flyer-winterkonzert-2022.jpg
+  - /src/assets/images/winterkonzert-2022-flyer.jpg
 ---
 
 Der Musikverein Bürglen lädt Sie herzlich zum diesjährigen Winterkonzert ein.
