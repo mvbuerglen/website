@@ -10,7 +10,7 @@
   enterShell = ''
     export PATH="$PWD/node_modules/.bin:$PATH"
 
-    corepack use pnpm
+    corepack use pnpm@9
     pnpm i
   '';
 }
