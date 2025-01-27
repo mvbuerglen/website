@@ -25,7 +25,7 @@
     "check": "pnpm run \"/^check:.*/\""
   },
   "dependencies": {
-    "astro": "5.1.7",
+    "astro": "5.1.9",
     "autoprefixer": "10.4.20",
     "sharp": "0.33.5",
     "unocss": "65.4.3"
