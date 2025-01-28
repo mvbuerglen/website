@@ -1,5 +1,5 @@
 ---
-title: Kontakt
+title: Probeplan
 layout: ~/layouts/Markdown.astro
 bild:
   - /src/assets/images/probe-1.jpg
