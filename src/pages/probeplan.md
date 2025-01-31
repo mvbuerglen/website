@@ -10,8 +10,8 @@ bild:
 * **Januar**
 
   * Mo 13. &nbsp; Probenbeginn 20.00 Uhr
-  * Mo 20.     Probe 20.00 Uhr
-  * Mo 27.     Probe 20.00 Uhr
+  * Mo 20. &nbsp; Probe 20.00 Uhr
+  * Mo 27. &nbsp; Probe 20.00 Uhr
 * **Februar**
 
   * Mo 03.     Probe 20.00 Uhr
