@@ -50,7 +50,7 @@ bild:
   * Do 05. &nbsp; Zusatzprobe 20.00 Uhr
   * **Sa 07.** &nbsp; Blasmusikfestival Altdorf, nach Ansage
   * Mo 09.&nbsp; Probe (Pfingsten) 20.00 Uhr
-  * Do 12. &nbsp; Hauptprobe Aula, 19.30 Uhr, Aula (Aufstellen + Probe ab 20.30 Uhr)
+  * Do 12. &nbsp; Hauptprobe Aula, 19.30 Uhr, Aufstellen, Probe 20.30 Uhr
   * **Sa 14.** &nbsp; Jahreskonzert Aula, nach Ansage
   * Mo 16. &nbsp; Probe 20.00 Uhr
   * **Do 19.** &nbsp; Fronleichnam, nach Ansage
