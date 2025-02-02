@@ -17,16 +17,16 @@ bild:
   * Mo 03. &nbsp; Probe 20.00 Uhr
   * Sa 08. &nbsp;  GV 2025 Nach Ansage
   * Mo 10. &nbsp; Probe 20.00 Uhr
-  * Fr 14. &nbsp;   VK Blasmusikverband Uri, Aula, Einrichten ab 15.00 Uhr, Auftritt 19.00 Uhr
+  * Fr 14. &nbsp;   VK Blasmusikverband Uri, Aula, Einrichten 15.00 Uhr, Auftritt 19.00 Uhr
   * Mo 17. &nbsp; Probe 20.00 Uhr
   * Mo 24. &nbsp; Probe 20.00 Uhr
 * **März**
 
-  * Mo 03.     Keine Probe (Güdelmontag)
-  * Mo 10.     Probe 20.00 Uhr
-  * Mo 17.     Probe 20.00 Uhr
-  * Mo 24.     Probe 20.00 Uhr
-  * Mo 31.     Probe 20.00 Uhr
+  * Mo 03. &nbsp; Keine Probe (Güdelmontag)
+  * Mo 10. &nbsp; Probe 20.00 Uhr
+  * Mo 17. &nbsp; Probe 20.00 Uhr
+  * Mo 24. &nbsp; Probe 20.00 Uhr
+  * Mo 31. &nbsp; Probe 20.00 Uhr
 * **April**
 
   * Mo 07.     Probe 20.00 Uhr
