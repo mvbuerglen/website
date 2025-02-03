@@ -1,23 +1,17 @@
 name: Dependabot auto-merge
 on:
-  check_suite:
-    types: [completed]
+  status
 permissions:
   pull-requests: write
   contents: write
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'mvbuerglen/website'
+    if: >-
+      github.event.state == 'success' &&
+      github.event.pull_request.user.login == 'dependabot[bot]' &&
+      github.repository == 'mvbuerglen/website'
     steps:
-      - name: Wait for checks
-        uses: lewagon/wait-on-check-action@v1.3.4
-        with:
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
-          check-name: "Pages changed - mvbuerglen"
-          allowed-conclusions: success,skipped,neutral
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          wait-interval: 60 # seconds
       - name: Dependabot metadata
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v2
