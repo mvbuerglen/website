@@ -1,6 +1,5 @@
 name: Dependabot auto-merge
-on:
-  status
+on: pull_request
 permissions:
   pull-requests: write
   contents: write
@@ -8,10 +7,11 @@ jobs:
   dependabot:
     runs-on: ubuntu-latest
     if: >-
-      github.event.state == 'success' &&
       github.event.pull_request.user.login == 'dependabot[bot]' &&
       github.repository == 'mvbuerglen/website'
     steps:
+      - name: Await checks
+        uses: jitterbit/await-check-suites@v1
       - name: Dependabot metadata
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v2
