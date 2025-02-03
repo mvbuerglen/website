@@ -10,8 +10,9 @@ jobs:
       github.event.pull_request.user.login == 'dependabot[bot]' &&
       github.repository == 'mvbuerglen/website'
     steps:
-      - name: Await checks
-        uses: jitterbit/await-check-suites@v1
+      - name: Wait for checks to start
+        run: sleep 180s
+        shell: bash
       - name: Dependabot metadata
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v2
