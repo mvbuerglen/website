@@ -10,7 +10,7 @@ importers:
     dependencies:
       astro:
         specifier: 5.2.3
-        version: 5.2.3(@types/node@22.10.10)(jiti@2.4.2)(rollup@4.34.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1)
+        version: 5.2.3(@types/node@22.13.0)(jiti@2.4.2)(rollup@4.34.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1)
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.1)
@@ -19,7 +19,7 @@ importers:
         version: 0.33.5
       unocss:
         specifier: 65.4.3
-        version: 65.4.3(postcss@8.5.1)(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
+        version: 65.4.3(postcss@8.5.1)(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
     devDependencies:
       '@astrojs/check':
         specifier: 0.9.4
@@ -28,8 +28,8 @@ importers:
         specifier: 1.10.4
         version: 1.10.4
       '@types/node':
-        specifier: 22.10.10
-        version: 22.10.10
+        specifier: 22.13.0
+        version: 22.13.0
       prettier:
         specifier: 3.4.2
         version: 3.4.2
@@ -727,8 +727,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@22.10.10':
-    resolution: {integrity: sha512-X47y/mPNzxviAGY5TcYPtYL8JsY3kAq2n8fMmKoRCxq/c4v4pyGNCzM2R6+M5/umG4ZfHuT+sgqDYqWc9rJ6ww==}
+  '@types/node@22.13.0':
+    resolution: {integrity: sha512-ClIbNe36lawluuvq3+YYhnIN2CELi+6q8NpnM7PYp4hBn/TatfboPgVSm2rwKRfnV2M+Ty9GWDFI64KEe+kysA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -2867,7 +2867,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.10.10':
+  '@types/node@22.13.0':
     dependencies:
       undici-types: 6.20.0
 
@@ -2875,13 +2875,13 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@unocss/astro@65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))':
+  '@unocss/astro@65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))':
     dependencies:
       '@unocss/core': 65.4.3
       '@unocss/reset': 65.4.3
-      '@unocss/vite': 65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
+      '@unocss/vite': 65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
     optionalDependencies:
-      vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
+      vite: 6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3011,7 +3011,7 @@ snapshots:
     dependencies:
       '@unocss/core': 65.4.3
 
-  '@unocss/vite@65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))':
+  '@unocss/vite@65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.4(rollup@4.34.1)
@@ -3021,7 +3021,7 @@ snapshots:
       chokidar: 3.6.0
       magic-string: 0.30.17
       tinyglobby: 0.2.10
-      vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
+      vite: 6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3181,7 +3181,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.2.3(@types/node@22.10.10)(jiti@2.4.2)(rollup@4.34.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1):
+  astro@5.2.3(@types/node@22.13.0)(jiti@2.4.2)(rollup@4.34.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.5.0
@@ -3233,8 +3233,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.14.4
       vfile: 6.0.3
-      vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
-      vitefu: 1.0.5(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))
+      vite: 6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
+      vitefu: 1.0.5(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -4646,9 +4646,9 @@ snapshots:
       unist-util-is: 6.0.0
       unist-util-visit-parents: 6.0.1
 
-  unocss@65.4.3(postcss@8.5.1)(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3)):
+  unocss@65.4.3(postcss@8.5.1)(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3)):
     dependencies:
-      '@unocss/astro': 65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
+      '@unocss/astro': 65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
       '@unocss/cli': 65.4.3(rollup@4.34.1)
       '@unocss/core': 65.4.3
       '@unocss/postcss': 65.4.3(postcss@8.5.1)
@@ -4664,9 +4664,9 @@ snapshots:
       '@unocss/transformer-compile-class': 65.4.3
       '@unocss/transformer-directives': 65.4.3
       '@unocss/transformer-variant-group': 65.4.3
-      '@unocss/vite': 65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
+      '@unocss/vite': 65.4.3(rollup@4.34.1)(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1))(vue@3.5.12(typescript@5.7.3))
     optionalDependencies:
-      vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
+      vite: 6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -4705,21 +4705,21 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1):
+  vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.5.1
       rollup: 4.34.1
     optionalDependencies:
-      '@types/node': 22.10.10
+      '@types/node': 22.13.0
       fsevents: 2.3.3
       jiti: 2.4.2
       tsx: 4.19.2
       yaml: 2.5.1
 
-  vitefu@1.0.5(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)):
+  vitefu@1.0.5(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)):
     optionalDependencies:
-      vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
+      vite: 6.0.11(@types/node@22.13.0)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.5.1)
 
   volar-service-css@0.0.61(@volar/language-service@2.4.5):
     dependencies:
