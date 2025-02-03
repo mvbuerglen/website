@@ -12,7 +12,8 @@ jobs:
         uses: lewagon/wait-on-check-action@v1.3.4
         with:
           ref: ${{ github.ref }}
-          check-name: "Netlify / Pages changed - mvbuerglen"
+          check-name: "Pages changed - mvbuerglen"
+          allowed-conclusions: success,skipped,neutral
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 60 # seconds
       - name: Dependabot metadata
