@@ -28,7 +28,7 @@
     "astro": "5.2.5",
     "autoprefixer": "10.4.20",
     "sharp": "0.33.5",
-    "unocss": "65.4.3"
+    "unocss": "65.5.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
