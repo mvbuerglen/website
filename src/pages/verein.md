@@ -8,7 +8,7 @@ bild:
 ---
 ## Vorstand
 
-Emil Walker, Präsident | Beat Spitzer | Evi Imhof | Sascha Herger | Stefanie Arnold
+Emil Walker, Präsident | Daniel Rüfenacht | Evi Imhof | Sascha Herger | Stefanie Arnold
 
 ## Musikkommission
 
@@ -25,6 +25,7 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 * Claudia Ulrich
 * Stefanie Arnold
 * Christa Pütz
+* Rica Kolthoff
 
 </section>
 
@@ -47,7 +48,6 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 * Sascha Herger
 * Emil Walker
 * Erich Herger
-* Nadine Tresch
 
 </section>
 
