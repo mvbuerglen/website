@@ -2,10 +2,11 @@
 title: Kontakt
 layout: ~/layouts/Markdown.astro
 bild:
-  - /src/assets/images/gruppenfoto-2022.jpg
+  - /src/assets/images/gruppenfoto-2025.jpg
   - /src/assets/images/probe-1.jpg
   - /src/assets/images/probe-2.jpg
 ---
+
 ## Kontakt
 
 Musikverein Bürglen<br/>
