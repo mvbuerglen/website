@@ -5,5 +5,9 @@ import unocss from "unocss/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [unocss()],
+  integrations: [
+    unocss({
+      injectReset: true,
+    }),
+  ],
 });

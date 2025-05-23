@@ -1,9 +1,9 @@
-import { defineConfig, presetWind, presetTypography, transformerDirectives } from "unocss";
-import { type Theme, theme } from "unocss/preset-wind";
+import { defineConfig, presetMini, presetTypography, transformerDirectives } from "unocss";
+import { type Theme, theme } from "unocss/preset-mini";
 
 export default defineConfig<Theme>({
   presets: [
-    presetWind({
+    presetMini({
       dark: "media",
     }),
     presetTypography(),
