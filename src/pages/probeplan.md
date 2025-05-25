@@ -58,4 +58,4 @@ bild:
 * *Sommerpause*
 * **August**
 
-  * Mo 18. &nbsp; Probestart 20.00 Uhr
+  * Mo 25. &nbsp; Probestart 20.00 Uhr
