@@ -4,7 +4,9 @@ datum: 2025-06-14T20:00:00+0200
 ort: Aula Bürglen
 bild:
   - /src/assets/images/jahreskonzert-2025-flyer.jpg
-  - /src/assets/images/gruppenfoto-2025.jpg
+  - /src/assets/images/jahreskonzert-2025-1.jpg
+  - /src/assets/images/jahreskonzert-2025-2.jpg
+  - /src/assets/images/jahreskonzert-2025-3.jpg
 ---
 
 Der Musikverein Bürglen lädt Sie herzlich zum Jahreskonzert 2025 ein.
