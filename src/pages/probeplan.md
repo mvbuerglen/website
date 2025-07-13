@@ -5,57 +5,45 @@ bild:
   - /src/assets/images/probe-1.jpg
   - /src/assets/images/probe-2.jpg
 ---
-## Proben und Auftritte, 1. Hälfte 2025
 
-* **Januar**
+## Proben und Auftritte, 2. Hälfte 2025
 
-  * Mo 13. &nbsp; Probenbeginn 20.00 Uhr
-  * Mo 20. &nbsp; Probe 20.00 Uhr
-  * Mo 27. &nbsp; Probe 20.00 Uhr
-* **Februar**
+- **August**
+  - Mo 25. &nbsp; Probenbeginn 20.00 Uhr
 
-  * Mo 03. &nbsp; Probe 20.00 Uhr
-  * **Sa 08**. &nbsp;  GV 2025 Nach Ansage
-  * Mo 10. &nbsp; Probe 20.00 Uhr
-  * **Fr 14**. &nbsp;   VK Blasmusikverband Uri, Aula, Einrichten 15.00, Auftritt 19.00 Uhr
-  * Mo 17. &nbsp; Probe 20.00 Uhr
-  * Mo 24. &nbsp; Probe 20.00 Uhr
-* **März**
+- **September**
+  - Mo 01. &nbsp; Probe 20.00 Uhr
+  - Mo 08. &nbsp; Probe 20.00 Uhr
+  - Mo 15. &nbsp; Probe 20.00 Uhr
+  - **Sa 20.** &nbsp; 50 Jahre Sporthalle. Vormittag, nach Ansage
+  - Mo 22. &nbsp; Probe 20.00 Uhr
+  - Mo 29. &nbsp; Probe 20.00 Uhr
 
-  * Mo 03. &nbsp; Keine Probe (Güdelmontag)
-  * Mo 10. &nbsp; Probe 20.00 Uhr
-  * Mo 17. &nbsp; Probe 20.00 Uhr
-  * Mo 24. &nbsp; Probe 20.00 Uhr
-  * Mo 31. &nbsp; Probe 20.00 Uhr
-* **April**
+- **Oktober**
+  - Mo 06. &nbsp; Probe 20.00 Uhr (trotz Hebrstferien)
+  - **Sa 11.**
+    - Aufrichten Sennenkilbi 09.00–12.00 Uhr
+    - Jubiliarenkonzert. Treffpunkt 13.00 Uhr. Konzert und Ehrung 13.30–17.00 Uhr
+  - **So 12.** &nbsp; Sennenkilbi. Nach Ansage
+  - Mo 13. &nbsp; _Herbstferien_
+  - Mo 20. &nbsp; Probe 20.00 Uhr
+  - Mo 27. &nbsp; Probe 20.00 Uhr
 
-  * Mo 07. &nbsp; Probe 20.00 Uhr
-  * Sa 12 . &nbsp; Probehalbtag 16.00-20.00 Uhr
-  * So 13 . &nbsp; Probehalbtag 09.00-12.00 Uhr
-  * Mo 14. &nbsp; Probe 20.00 Uhr
-  * Mo 21. &nbsp; Keine Probe (Ostermontag)
-  * **So 27.** &nbsp; Weisser Sonntag, nach Ansage
-  * Mo 28. &nbsp; Probe (Frühlingsferien) 20.00 Uhr
-* **Mai**
+- **November**
+  - Mo 03. &nbsp; Probe 20.00 Uhr
+  - **Sa 08.** &nbsp; Probehalbtag 16.00-20.00 Uhr
+  - **So 09.** &nbsp; Probehalbtag 09.00-12.00 Uhr
+  - Mo 10. &nbsp; Probe 20.00 Uhr
+  - Mo 17. &nbsp; Probe 20.00 Uhr
+  - Do 20. &nbsp; Zusatzprobe 20.00 Uhr
+  - Mo 24. &nbsp; Probe 20.00 Uhr
 
-  * Mo 05. &nbsp; Keine Probe (Frühlingsferien)
-  * Mo 12. &nbsp; Probe 20.00 Uhr
-  * Do 15. &nbsp; Zusatzprobe 20.00 Uhr
-  * Mo 19. &nbsp; Probe 20.00 Uhr
-  * **Fr 23.** &nbsp; Konzert mit Jugendmusik, nach Ansage
-  * Mo 26. &nbsp; Probe 20.00 Uhr
-* **Juni**
+- **Dezember**
+  - Mo 01. &nbsp; Probe 20.00 Uhr
+  - Do 04. &nbsp; Hauptprobe 20.00 Uhr
+  - **Mo 08.** &nbsp; Konzert. Treffpunkt in der Kirche 15.45 Uhr. Konzert 17.00 Uhr
 
-  * Mo 02. &nbsp; Probe 20.00 Uhr
-  * Do 05. &nbsp; Zusatzprobe 20.00 Uhr
-  * **Sa 07.** &nbsp; Blasmusikfestival Altdorf, nach Ansage
-  * Mo 09.&nbsp; Probe (Pfingsten) 20.00 Uhr
-  * Do 12. &nbsp; Hauptprobe Aula, 19.30 Uhr, Aufstellen, Probe 20.30 Uhr
-  * **Sa 14.** &nbsp; Jahreskonzert Aula, nach Ansage
-  * Mo 16. &nbsp; Probe 20.00 Uhr
-  * **Do 19.** &nbsp; Fronleichnam, nach Ansage
-  * Mo 23. &nbsp;   Schlusshock, nach Ansage
-* *Sommerpause*
-* **August**
+- _Winterpause_
 
-  * Mo 25. &nbsp; Probestart 20.00 Uhr
+- **Januar**
+  - Mo 12. &nbsp; Probebeginn 20.00 Uhr
