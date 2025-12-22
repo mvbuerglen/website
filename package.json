@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@unocss/reset": "66.5.10",
-    "astro": "5.16.5",
+    "astro": "5.16.6",
     "autoprefixer": "10.4.23",
     "sharp": "0.34.5",
     "unocss": "66.5.10"
