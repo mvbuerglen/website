@@ -6,7 +6,6 @@ bild:
   - /src/assets/images/gruppenfoto-2022.jpg
   - /src/assets/images/jahreskonzert-2023-1.jpg
 ---
-
 ## Vorstand
 
 Emil Walker, Präsident | Daniel Rüfenacht | Evi Imhof | Sascha Herger | Stefanie Arnold
@@ -23,10 +22,10 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Flöte
 
-- Claudia Ulrich
-- Stefanie Arnold
-- Christa Pütz
-- Rica Kolthoff
+* Claudia Ulrich
+* Stefanie Arnold
+* Christa Pütz
+* Rica Kolthoff
 
 </section>
 
@@ -34,10 +33,10 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Klarinette
 
-- Peter Horat
-- Max von Deschwanden
-- Evi Imhof
-- Trix Waridel
+* Peter Horat
+* Max von Deschwanden
+* Evi Imhof
+* Trix Waridel
 
 </section>
 
@@ -45,10 +44,11 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Trompete
 
-- Martin Arnold
-- Sascha Herger
-- Emil Walker
-- Erich Herger
+* Martin Arnold
+* Sascha Herger
+* Emil Walker
+* Erich Herger
+* Barbara Ott
 
 </section>
 
@@ -56,11 +56,11 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Altosaxophon / Tenorsaxophon / Baritonsaxophon
 
-- Bruno Styger
-- Hans Gisler
-- Sergey Shishkin
-- Beat Spitzer
-- Ingrid Dittli
+* Bruno Styger
+* Hans Gisler
+* Sergey Shishkin
+* Beat Spitzer
+* Ingrid Dittli
 
 </section>
 
@@ -68,10 +68,10 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Waldhorn / Es-Horn / Bariton / Tenorhorn
 
-- Roland Imhof
-- Lino Arnold
-- Nicolas Walker
-- Heinz Walker
+* Roland Imhof
+* Lino Arnold
+* Nicolas Walker
+* Heinz Walker
 
 </section>
 
@@ -79,9 +79,8 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Posaune
 
-- Tumasch Cathomen
-- Markus Baumann
-- Daniel Rüfenacht
+* Markus Baumann
+* Daniel Rüfenacht
 
 </section>
 
@@ -89,8 +88,8 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Tuba
 
-- Bruno Bissig
-- Sascha Walther
+* Bruno Bissig
+* Sascha Walther
 
 </section>
 
@@ -98,7 +97,7 @@ Markus Arnold | Martin Arnold | Evi Imhof | Christian Simmen, Dirigent
 
 ### Perkussion
 
-- Markus Arnold
+* Markus Arnold
 
 </section>
 
