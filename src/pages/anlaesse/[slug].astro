@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import { formatDateTime } from "~/components/time.js";
 import Layout from "~/layouts/Markdown.astro";
 
@@ -8,14 +8,14 @@ export async function getStaticPaths() {
 
   return items.map((item) => ({
     params: {
-      slug: item.slug,
+      slug: item.id,
     },
     props: { item },
   }));
 }
 
 const { item } = Astro.props;
-const { Content } = await item.render();
+const { Content } = await render(item);
 const localDate = item.data.datum;
 ---
 
