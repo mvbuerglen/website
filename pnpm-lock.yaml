@@ -11,6 +11,9 @@ importers:
       '@unocss/astro':
         specifier: 66.6.8
         version: 66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2))
+      '@unocss/postcss':
+        specifier: 66.6.8
+        version: 66.6.8(postcss@8.5.13)
       '@unocss/reset':
         specifier: 66.6.8
         version: 66.6.8
@@ -25,7 +28,7 @@ importers:
         version: 0.34.5
       unocss:
         specifier: 66.6.8
-        version: 66.6.8(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@unocss/astro@66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2)))(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2))
+        version: 66.6.8(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@unocss/astro@66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2)))(@unocss/postcss@66.6.8(postcss@8.5.13))(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2))
     devDependencies:
       '@astrojs/check':
         specifier: 0.9.9
@@ -920,6 +923,12 @@ packages:
 
   '@unocss/inspector@66.6.8':
     resolution: {integrity: sha512-g8uRzXDdmoNRjXX/mZP7m0rWXLtOimyOW7+VFK6FNxRWBmvIGYgTLHkutF6Wyh9lLPDYx3pkkEmfgL35BDT3Sg==}
+
+  '@unocss/postcss@66.6.8':
+    resolution: {integrity: sha512-wBbcSBSwWjQ4YhgcT4f2N0FUeRnO/AOnpb90nElEdTipNiLscyo7d2B5EpC/TG/4JRoiSXqZO5bWXiT9FdcJmA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      postcss: ^8.4.21
 
   '@unocss/preset-attributify@66.6.8':
     resolution: {integrity: sha512-YxyRSF5rq0WbY8kCG0gpj3DSXPL89QGxZeqABmceCzPJbXJBBHEJz/pgBPmzSa2Ziulgs0AEkHzWFPfpb2uGTA==}
@@ -2937,6 +2946,15 @@ snapshots:
       gzip-size: 6.0.0
       sirv: 3.0.2
 
+  '@unocss/postcss@66.6.8(postcss@8.5.13)':
+    dependencies:
+      '@unocss/config': 66.6.8
+      '@unocss/core': 66.6.8
+      '@unocss/rule-utils': 66.6.8
+      css-tree: 3.2.1
+      postcss: 8.5.13
+      tinyglobby: 0.2.16
+
   '@unocss/preset-attributify@66.6.8':
     dependencies:
       '@unocss/core': 66.6.8
@@ -4429,7 +4447,7 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  unocss@66.6.8(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@unocss/astro@66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2)))(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2)):
+  unocss@66.6.8(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@unocss/astro@66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2)))(@unocss/postcss@66.6.8(postcss@8.5.13))(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2)):
     dependencies:
       '@unocss/cli': 66.6.8
       '@unocss/core': 66.6.8
@@ -4450,6 +4468,7 @@ snapshots:
       '@unocss/vite': 66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2))
     optionalDependencies:
       '@unocss/astro': 66.6.8(vite@7.3.2(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.2))
+      '@unocss/postcss': 66.6.8(postcss@8.5.13)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
