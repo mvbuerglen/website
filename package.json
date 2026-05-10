@@ -18,7 +18,7 @@
     "start": "astro dev",
     "build": "pnpm check && astro build",
     "preview": "astro preview",
-    "check:prettier": "biome check",
+    "check:biome": "biome check",
     "check:tsc": "tsc --noEmit",
     "check:astro": "astro check",
     "check": "pnpm run \"/^check:.*/\""
