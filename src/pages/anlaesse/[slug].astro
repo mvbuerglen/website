@@ -1,7 +1,7 @@
 ---
-import Layout from "~/layouts/Markdown.astro";
 import { getCollection } from "astro:content";
 import { formatDateTime } from "~/components/time.js";
+import Layout from "~/layouts/Markdown.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("anlaesse");
@@ -22,7 +22,8 @@ const localDate = item.data.datum;
 <Layout frontmatter={item.data}>
   <h2>{item.data.title}</h2>
   <p>
-    <time datetime={localDate.toISOString()}>{formatDateTime(localDate)}</time> in {item.data.ort}
+    <time datetime={localDate.toISOString()}>{formatDateTime(localDate)}</time>
+    in {item.data.ort}
   </p>
   <Content />
 </Layout>

@@ -4,24 +4,24 @@ import Logo from "~/components/Logo.astro";
 import "~/styles/main.css";
 
 export interface Props {
-  title?: string;
-  images?: string[];
+  title?: string | undefined;
+  bild?: string[] | undefined;
 }
 
-const { title = "Musikverein Bürglen", images = ["/src/assets/images/winterkonzert-2023.jpg"] } =
+const { title = "Musikverein Bürglen", bild = ["/src/assets/images/winterkonzert-2023.jpg"] } =
   Astro.props;
 
 // image from Markdown can be an empty string:
-const imageSrcs = images.filter((s) => s.length);
+const imageSrcs = bild.filter((s) => s.length);
 ---
 
 <!doctype html>
 <html lang="de-CH">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{title}</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   </head>
   <body>
     <header>

@@ -2,13 +2,13 @@
 import Layout from "~/layouts/Main.astro";
 
 export interface Props {
-  frontmatter: Record<string, any>;
+  frontmatter: object;
 }
 
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={frontmatter.title} images={frontmatter.bild}>
+<Layout {...frontmatter}>
   <article class="prose text-lg">
     <slot />
   </article>

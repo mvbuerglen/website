@@ -11,7 +11,7 @@ export default defineConfig<Theme>({
   transformers: [transformerDirectives()],
   theme: {
     colors: {
-      primary: theme.colors?.cyan!,
+      primary: theme.colors.cyan,
     },
     width: {
       "8xl": "96rem",

@@ -1,4 +1,5 @@
 :root {
+  /* biome-ignore lint: unocss function */
   --un-prose-headings: theme("colors.primary.800");
 }
 

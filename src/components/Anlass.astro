@@ -14,9 +14,7 @@ const localDate = item.data.datum;
   <time datetime={localDate.toISOString()}>{formatDate(localDate)}</time>
 </p>
 <a href={`/anlaesse/${item.slug}`} class:list={["overlay-link"]}><h3>{item.data.title}</h3></a>
-<p>
-  <time datetime={localDate.toISOString()}>{formatTime(localDate)}</time> in {item.data.ort}
-</p>
+<p><time datetime={localDate.toISOString()}>{formatTime(localDate)}</time> in {item.data.ort}</p>
 <style>
   p:first-child {
     @apply text-gray;
