@@ -19,9 +19,9 @@
     "build": "pnpm check && astro build",
     "preview": "astro preview",
     "check:biome": "biome check",
-    "check:tsc": "tsc --noEmit",
     "check:astro": "astro check",
-    "check": "pnpm run \"/^check:.*/\""
+    "check:tsc": "tsc --noEmit",
+    "check": "pnpm run --sequential \"/^check:.*/\""
   },
   "dependencies": {
     "@unocss/astro": "66.6.8",
