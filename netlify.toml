@@ -1,0 +1,7 @@
+[build]
+  base = "."
+  publish = "dist/"
+  command = "pnpm run build"
+
+  [environment]
+    NODE_VERSION = "24"
