@@ -1,41 +1,53 @@
-locale: de
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 
 backend:
   name: github
   repo: mvbuerglen/website
   branch: main
+  auth_methods: [oauth]
 
-media_folder: src/assets/images
+media_folder: /src/assets/images
+
+media_libraries:
+  default: {}
+  all:
+    slugify_filename: true
+    max_file_size: 524288
+    transformations:
+      raster_image:
+        format: webp
+        quality: 85
+        width: 1536
+        height: 725
 
 show_preview_links: false
-search: false
 
 slug:
-  encoding: "ascii"
+  encoding: ascii
   clean_accents: true
 
 collections:
   - name: seiten
     label: Seiten
     label_singular: Seite
-    identifier_field: title
     folder: src/pages
     create: false
     delete: false
-    extension: md
-    format: yaml-frontmatter
+    duplicate: false
     slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - label: Titel
-        name: title
-        widget: hidden
-      - label: Layout
-        name: layout
-        widget: hidden
-      - label: Bilder
-        name: bild
+      - name: title
+        label: Titel
+        widget: string
+        readonly: true
+      - name: layout
+        label: Layout
+        widget: string
+        readonly: true
+      - name: bild
+        label: Bilder
         required: false
         widget: "list"
         max: 10
@@ -43,16 +55,13 @@ collections:
         collapsed: false
         field:
           name: bild
+          label: Bild
           widget: image
-          label_singular: Bild
           required: true
-          allow_multiple: false
+          multiple: false
           choose_url: false
-          media_library:
-            config:
-              max_file_size: 1048576 # 1MB
-      - label: Inhalt
-        name: body
+      - name: body
+        label: Inhalt
         widget: markdown
   - name: anlaesse
     label: Anlässe
@@ -60,26 +69,27 @@ collections:
     folder: src/content/anlaesse
     create: true
     delete: true
+    duplicate: true
     slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - label: Titel
-        name: title
+      - name: title
+        label: Titel
         widget: string
         hint: z.B. Winterkonzert
-      - label: Datum
-        name: datum
+      - name: datum
+        label: Datum
         widget: datetime
         format: "YYYY-MM-DDTHH:mm:ssZZ"
-        picker_utc: false
+        input_timezone: "Europe/Zurich"
         hint: Datum und lokale Uhrzeit
-      - label: Ort
-        name: ort
+      - name: ort
+        label: Ort
         widget: string
         hint: z.B. Aula Bürglen
-      - label: Bilder
-        name: bild
+      - name: bild
+        label: Bilder
         required: false
         widget: "list"
         max: 10
@@ -87,16 +97,13 @@ collections:
         collapsed: false
         field:
           name: bild
-          label_singular: Bild
+          label: Bild
           widget: image
           required: true
-          allow_multiple: false
+          multiple: false
           choose_url: false
-          media_library:
-            config:
-              max_file_size: 1048576 # 1MB
-      - label: Inhalt
-        name: body
+      - name: body
+        label: Inhalt
         widget: markdown
         required: false
     sortable_fields: ["datum", "title"]
