@@ -17,10 +17,11 @@ const localDate = item.data.datum;
 <p><time datetime={localDate.toISOString()}>{formatTime(localDate)}</time> in {item.data.ort}</p>
 <style>
   p:first-child {
-    @apply text-gray;
+    color: var(--theme-colors-gray);
   }
 
   h3 {
-    @apply mt-4 mb-2;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 </style>

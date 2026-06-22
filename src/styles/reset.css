@@ -1,7 +1,10 @@
 *,
 *::before,
 *::after {
-  @apply box-border m-0;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  margin: 0;
 }
 
 img,
@@ -9,5 +12,6 @@ picture,
 video,
 canvas,
 svg {
-  @apply block max-w-full;
+  display: block;
+  max-width: 100%;
 }

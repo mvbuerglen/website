@@ -1,11 +1,19 @@
-:root {
-  /* biome-ignore lint: unocss function */
-  --un-prose-headings: theme("colors.primary.800");
-}
-
 body {
-  @apply antialiased font-sans text-gray-900 lh-normal;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    Segoe UI Symbol,
+    "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  color: var(--theme-colors-gray-900);
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -14,11 +22,15 @@ h3,
 h4,
 h5,
 h6 {
-  @apply heading lh-tight color-primary-800;
+  color: var(--theme-colors-primary-800);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-stretch: semi-condensed;
+  line-height: 1.25;
 }
 
 .prose :is(h1, h2, h3, h4, h5, h6) {
-  @apply font-extralight;
+  font-weight: 200;
 }
 
 p,
@@ -32,29 +44,37 @@ h6 {
 }
 
 a {
-  @apply color-primary-800 decoration-none hover:decoration-underline;
+  color: var(--theme-colors-primary-800);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .invert-colors {
-  @apply bg-primary-900 text-white;
+  background-color: var(--theme-colors-primary-900);
+  color: var(--theme-colors-white);
 
   & :is(h1, h2, h3, h4, h5, h6, a) {
-    @apply text-white;
+    color: var(--theme-colors-white);
   }
 }
 
 .column-layout {
-  @apply wide-container columns-[12rem_auto] gap-col-16 p-bs-1.5em;
+  columns: 12rem auto;
+  column-gap: 4rem;
+  padding-block-start: 1.5em;
 
   & section {
-    @apply break-inside-avoid;
+    break-inside: avoid;
 
     & + section {
-      @apply m-bs-1.5em;
+      margin-block-start: 1.5em;
     }
 
     & > *:is(h1, h2, h3, h4, h5, h6) {
-      @apply m-bs-0;
+      margin-block-start: 0;
     }
   }
 }

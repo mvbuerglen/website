@@ -9,8 +9,3 @@ const { tag: Tag = "article" } = Astro.props;
 <Tag class:list={["card"]}>
   <slot />
 </Tag>
-<style>
-  .card {
-    @apply relative px-6 py-8 shadow hover:shadow-sm transition;
-  }
-</style>

@@ -1,7 +1,13 @@
 nav ul {
-  @apply list-none pl-0 flex flex-wrap gap-4;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 1rem;
 }
 
 nav a {
-  @apply heading;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-stretch: semi-condensed;
 }

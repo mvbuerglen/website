@@ -22,7 +22,6 @@ const image = typeof src === "string" ? await getImage(src) : src;
     "wide-image": true,
     "h-auto": height !== "full",
     "h-full": height === "full",
-    "object-cover": true,
   }}
   widths={[640, 1024, 1280, 1536]}
   sizes={`(max-width: 640px) 640px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px`}

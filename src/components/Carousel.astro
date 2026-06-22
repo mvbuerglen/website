@@ -17,10 +17,10 @@ const aspectRatio = first ? `${first.width}/${first.height}` : undefined;
 
 {images.length === 1 && !!first && <CoverImage src={first} />}
 {images.length > 1 && (
-    <div class="carousel" data-interval={interval}>
+    <div class="carousel wide-image" data-interval={interval}>
       <ul class="items no-scrollbar">
         {images.map((image) => (
-          <li style={{ "aspect-ratio": aspectRatio }}>
+          <li class="wide-image" style={{ "aspect-ratio": aspectRatio }}>
             <CoverImage src={image} height="full" />
           </li>
         ))}
@@ -29,16 +29,20 @@ const aspectRatio = first ? `${first.width}/${first.height}` : undefined;
   )}
 <style>
   .carousel {
-    @apply wide-image relative;
+    position: relative;
 
     & ul.items {
-      @apply pl-0 w-full flex overflow-x-auto;
+      padding-left: 0;
+      width: 100%;
+      display: flex;
+      overflow-x: auto;
       list-style-type: none;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
 
       & li {
-        @apply wide-image flex-shrink-0 flex-grow-0;
+        flex-shrink: 0;
+        flex-grow: 0;
         scroll-snap-align: center;
         scroll-snap-stop: always;
       }

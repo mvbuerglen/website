@@ -1,0 +1,17 @@
+:root {
+  /* colors: */
+  --theme-colors-white: white;
+  --theme-colors-primary-800: rgb(21 94 117 / 1);
+  --theme-colors-primary-900: rgb(16 78 100 / 1);
+  --theme-colors-gray: rgb(156 163 175 / 1);
+  --theme-colors-gray-900: rgb(17 24 39 / 1);
+
+  /* sizes: */
+  --theme-size-8xl: 96rem;
+  --theme-size-6xl: 72rem;
+  --theme-spacing: 1rem;
+
+  /* shadows: */
+  --shadow: 0 2px 16px 4px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 2px 16px -2px rgb(0 0 0 / 0.1);
+}

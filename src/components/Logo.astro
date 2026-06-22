@@ -5,15 +5,29 @@ import svg from "~/assets/svg/logo.svg?raw";
 <a class="logo" href="/"><Fragment set:html={svg} /><span>Musikverein Bürglen</span></a>
 <style>
   a.logo {
-    @apply block h-20 flex-grow-0 flex gap-2 items-center text-primary-800 decoration-none hover:decoration-none;
+    height: 5rem;
+    flex-grow: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--theme-colors-primary-800);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     & span {
-      @apply heading;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-stretch: semi-condensed;
     }
   }
 </style>
 <style is:global>
   a.logo svg {
-    @apply w-20 h-20 flex-shrink-0;
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
   }
 </style>
