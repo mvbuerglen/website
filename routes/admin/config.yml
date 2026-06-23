@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: mvbuerglen/website
+  branch: main
+  auth_methods: [oauth]
+
+media_folder: /content/images
+
+media_libraries:
+  default: {}
+  all:
+    slugify_filename: true
+    max_file_size: 524288
+    transformations:
+      raster_image:
+        format: webp
+        quality: 85
+        width: 1536
+        height: 725
+
+show_preview_links: false
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: seiten
+    label: Seiten
+    label_singular: Seite
+    folder: content/pages
+    create: false
+    delete: false
+    duplicate: false
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Titel
+        widget: string
+        readonly: true
+      - name: bild
+        label: Bilder
+        required: false
+        widget: "list"
+        max: 10
+        min: 0
+        collapsed: false
+        field:
+          name: bild
+          label: Bild
+          widget: image
+          required: true
+          multiple: false
+          choose_url: false
+      - name: body
+        label: Inhalt
+        widget: markdown
+  - name: anlaesse
+    label: Anlässe
+    label_singular: Anlass
+    folder: content/anlaesse
+    create: true
+    delete: true
+    duplicate: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Titel
+        widget: string
+        hint: z.B. Winterkonzert
+      - name: datum
+        label: Datum
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZZ"
+        input_timezone: "Europe/Zurich"
+        hint: Datum und lokale Uhrzeit
+      - name: ort
+        label: Ort
+        widget: string
+        hint: z.B. Aula Bürglen
+      - name: bild
+        label: Bilder
+        required: false
+        widget: "list"
+        max: 10
+        min: 0
+        collapsed: false
+        field:
+          name: bild
+          label: Bild
+          widget: image
+          required: true
+          multiple: false
+          choose_url: false
+      - name: body
+        label: Inhalt
+        widget: markdown
+        required: false
+    sortable_fields: ["datum", "title"]
+    view_groups:
+      - label: Jahr
+        field: datum
+        pattern: \d{4}

@@ -1,0 +1,371 @@
+/* Reset: */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Theme: */
+:root {
+  /* colors: */
+  --theme-colors-white: white;
+  --theme-colors-primary-800: rgb(21 94 117 / 1);
+  --theme-colors-primary-900: rgb(16 78 100 / 1);
+  --theme-colors-gray: rgb(156 163 175 / 1);
+  --theme-colors-gray-900: rgb(17 24 39 / 1);
+
+  /* sizes: */
+  --theme-size-8xl: 96rem;
+  --theme-size-6xl: 72rem;
+  --theme-spacing: 1rem;
+
+  /* shadows: */
+  --shadow: 0 2px 16px 4px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 2px 16px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Typography: */
+body {
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    Segoe UI Symbol,
+    "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  color: var(--theme-colors-gray-900);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--theme-colors-primary-800);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-stretch: semi-condensed;
+  line-height: 1.25;
+}
+
+.prose :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 200;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: var(--theme-colors-primary-800);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.invert-colors {
+  background-color: var(--theme-colors-primary-900);
+  color: var(--theme-colors-white);
+
+  & :is(h1, h2, h3, h4, h5, h6, a) {
+    color: var(--theme-colors-white);
+  }
+}
+
+.column-layout {
+  columns: 12rem auto;
+  column-gap: 4rem;
+  padding-block-start: 1.5em;
+
+  & section {
+    break-inside: avoid;
+
+    & + section {
+      margin-block-start: 1.5em;
+    }
+
+    & > *:is(h1, h2, h3, h4, h5, h6) {
+      margin-block-start: 0;
+    }
+  }
+}
+
+/* Layout */
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+
+  & nav {
+    flex-grow: 0;
+  }
+}
+
+a.logo {
+  height: 5rem;
+  flex-grow: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--theme-colors-primary-800);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  & span {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-stretch: semi-condensed;
+  }
+
+  & img {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+  }
+}
+
+main {
+  margin-block: 3rem;
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-block: 5rem;
+
+  & nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 1rem;
+}
+
+nav a {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-stretch: semi-condensed;
+}
+
+/* Utilities */
+.no-scrollbar {
+  /* Edge */
+  -ms-overflow-style: none;
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* Chrome & Safari */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.wide-container {
+  width: min(var(--theme-size-6xl), calc(100vw - 2 * var(--theme-spacing)));
+  margin-inline: auto;
+}
+
+.filled-container {
+  width: "100%";
+  /**
+   * Filled container needs to have full width, but adjust horizontal padding to maintain
+   * content at max width of 6xl (72rem) minus default spacing. It also should have at least
+   * default spacing (1rem) as horizontal padding.
+   */
+  padding-inline: max(
+    var(--theme-spacing),
+    calc((100% - var(--theme-size-6xl)) / 2 + var(--theme-spacing))
+  );
+}
+
+.wide-image {
+  width: min(var(--theme-size-8xl), 100vw);
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.overlay-link:after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+}
+
+.card {
+  position: relative;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  box-shadow: var(--shadow);
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+
+  &:hover {
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+p.subtitle,
+p.location {
+  color: var(--theme-color-gray);
+  text-transform: uppercase;
+}
+
+section.anlaesse {
+  margin-block: var(--theme-spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  align-items: stretch;
+  gap: var(--theme-spacing);
+}
+
+.prose {
+  max-width: 65ch;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+
+  & :where(p) {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  & :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 200;
+  }
+
+  & :where(h2) {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3333333;
+  }
+
+  & :where(h3) {
+    font-size: 1.25em;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+  }
+
+  & :where(h4) {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+
+  & :where(h2 + *) {
+    margin-top: 0;
+  }
+
+  & :where(strong) {
+    font-weight: 600;
+  }
+
+  & :where(ul ul, ul ol, ol ul, ol ol) {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
+
+  & ul {
+    list-style-type: disc;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-inline-start: 1.625em;
+
+    & > li {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      padding-inline-start: 0.375em;
+
+      &::marker {
+        color: var(--theme-colors-gray);
+      }
+    }
+  }
+}
+
+.carousel {
+  position: relative;
+
+  & > ul.items {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    list-style-type: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    & > li {
+      flex-shrink: 0;
+      flex-grow: 0;
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
+    }
+  }
+}

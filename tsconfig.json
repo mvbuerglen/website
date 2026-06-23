@@ -1,13 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strictest",
+  "extends": "@tsconfig/node24/tsconfig.json",
   "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
     "paths": {
-      "~/*": ["./src/*"]
+      "#*": ["./*"]
     },
-    "plugins": [
-      {
-        "name": "@astrojs/ts-plugin"
-      }
-    ]
+    "lib": ["DOM"],
+    "types": ["node"],
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true
   }
 }
