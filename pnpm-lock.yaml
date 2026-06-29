@@ -12,8 +12,8 @@ importers:
         specifier: 66.7.2
         version: 66.7.2(vite@8.1.0(@types/node@26.0.0)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
       '@unocss/reset':
-        specifier: 66.7.2
-        version: 66.7.2
+        specifier: 66.7.3
+        version: 66.7.3
       astro:
         specifier: 7.0.3
         version: 7.0.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@26.0.0)(jiti@2.7.0)(yaml@2.9.0)
@@ -1194,6 +1194,9 @@ packages:
 
   '@unocss/reset@66.7.2':
     resolution: {integrity: sha512-dKRbpBicfchatvqK2wqfX8gtNTCf+2pFdXBNDC0Cl2PZ8QCVMtCaHTOTSyruM0Pw7aqST4SlPkF5f8x7aZZL0w==}
+
+  '@unocss/reset@66.7.3':
+    resolution: {integrity: sha512-EuWSHSWsl+qdc+7c4car0IPEDbcuyrGUvFqTOo2AV383lOuIzvyuRxkuL1rLqb2kh+ZYkpBnL49+FXmjX36/nA==}
 
   '@unocss/rule-utils@66.7.2':
     resolution: {integrity: sha512-EGi2m9I87hluz2zgjVpXM4PWFn996RInNcx4PGF6Qw9Z0W78ROXEto0SM1IltpJ4R7+at4EhssU0IbHiT0snEw==}
@@ -3289,6 +3292,8 @@ snapshots:
       '@unocss/preset-wind3': 66.7.3
 
   '@unocss/reset@66.7.2': {}
+
+  '@unocss/reset@66.7.3': {}
 
   '@unocss/rule-utils@66.7.2':
     dependencies:

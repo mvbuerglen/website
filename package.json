@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@unocss/astro": "66.7.2",
-    "@unocss/reset": "66.7.2",
+    "@unocss/reset": "66.7.3",
     "astro": "7.0.3",
     "sharp": "0.35.2",
     "unocss": "66.7.3"
