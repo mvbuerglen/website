@@ -27,7 +27,7 @@
     "@unocss/astro": "66.7.5",
     "@unocss/reset": "66.8.1",
     "astro": "7.2.9",
-    "sharp": "0.35.3",
+    "sharp": "0.35.4",
     "unocss": "66.7.5"
   },
   "devDependencies": {
