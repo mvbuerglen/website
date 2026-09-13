@@ -5,63 +5,58 @@ bild:
   - /content/images/probe-2.jpg
 ---
 
-## Proben und Auftritte, 1. Hälfte 2026
+## Proben und Auftritte, 2. Hälfte 2026
 
-- **Januar**
-  - Mo 12. Probenbeginn 20.00 Uhr
+- **August**
+  - Mo 17. Probestart 20.00 Uhr
+  - Mo 24. Probe 20.00 Uhr
+  - Mo 31. Probe 20.00 Uhr
+
+- **September**
+  - Mo 07. Probe 20.00 Uhr
+  - Mo 14. Probe 20.00 Uhr
+  - Mo 21. Probe 20.00 Uhr
+  - Mo 28. Probe 20.00 Uhr
+
+- **Oktober**
+  - Mo 05. Probe (Herbstferien) 20.00 Uhr
+  - Sa/So 10./11. _Altersehrung / Sennenkilbi_ Nach Ansage
+  - Mo 12. _Herbstferien_
   - Mo 19. Probe 20.00 Uhr
   - Mo 26. Probe 20.00 Uhr
 
-- **Februar**
+- **November**
   - Mo 02. Probe 20.00 Uhr
   - Mo 09. Probe 20.00 Uhr
-  - Mo 16. _Güdelmontag_
-  - Mo 23. Probe 20.00 Uhr
-  - Sa 28. GV 2026
-
-- **März**
-  - Mo 02. Probe 20.00 Uhr
-  - Mo 09. Probe 20.00 Uhr
+  - Sa/So 14./15. _Probeweekend_ Nach Ansage
   - Mo 16. Probe 20.00 Uhr
   - Mo 23. Probe 20.00 Uhr
   - Mo 30. Probe 20.00 Uhr
 
+- **Dezember**
+  - Do 03. Zusatzprobe 20.00 Uhr
+  - Mo 07. Hauptprobe 20.00 Uhr
+  - Di 08. _Winterkonzert_ Nach Ansage
+
+### Ausblick 1. Hälfte 2027
+
+- **Januar**
+  - Mo 11. Probestart 20.00 Uhr
+
+- **Februar**
+  - Sa 20. _GV_
+
 - **April**
-  - Mo 06. _Ostermontag_
-  - Sa 11. Tagung Musik-Veteranen
-  - So 12. _Weisser Sonntag_
-  - Mo 13. Probe 20.00 Uhr
-  - Sa/So 18./19 _Probeweekend_
-    - Sa: 16.00-20.00 Uhr
-    - So: 09.00-12.00 Uhr
-  - Mo 20. Probe 20.00 Uhr
-  - Mo 27. Probe 20.00 Uhr
+  - So 04. _Weisser Sonntag_
+  - 10./11. _Probeweekend_
 
 - **Mai**
-  - Mo 04. _Frühlingsferien_
-  - Mo 11. Probe 20.00 Uhr
-  - Mo 18. Probe 20.00 Uhr
-  - Do 21. Zusatzprobe 20.00 Uhr
-  - Mo 25. Probe 20.00 Uhr
-  - Do 28. Hauptprobe 20.00 Uhr
-  - Sa 30. Jahreskonzert
+  - 23. _Urner Kantonales Schwingfest_
+  - 27. _Fronleichnam_
 
 - **Juni**
-  - Mo 01. Probe 20.00 Uhr
-  - Do 04. _Fronleichnam_
-  - Sa 06. Urner Kantonales Schwingfest (Mithilfe MV Flüelen)
-  - Mo 08. _Schlusshock_
-
-- _Sommerpause_
+  - 10. _Hauptprobe_ Uristier-Saal
+  - 11. _Konzert mit Chor Uri_ Uristier-Saal
 
 - **August**
-  - Mo 17. Probestart 20.00 Uhr
-
-- **Oktober**
-  - 10./11. Altersehrung/Sennenkilbi
-
-- **November**
-  - 14./15. Probeweekend
-
-- **Dezember**
-  - Di 08. Winterkonzert
+  - 14. _Hochzeit Rica_
