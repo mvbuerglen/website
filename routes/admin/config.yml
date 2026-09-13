@@ -3,7 +3,7 @@
 backend:
   name: github
   repo: mvbuerglen/website
-  branch: mastro
+  branch: main
   auth_methods: [oauth]
 
 media_folder: /content/images
