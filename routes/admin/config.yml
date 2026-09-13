@@ -7,6 +7,7 @@ backend:
   auth_methods: [oauth]
 
 media_folder: /content/images
+public_folder: /_images
 
 media_libraries:
   default: {}
@@ -102,7 +103,11 @@ collections:
         label: Inhalt
         widget: markdown
         required: false
-    sortable_fields: ["datum", "title"]
+    sortable_fields:
+      fields: ["datum", "title"]
+      default:
+        field: datum
+        direction: descending
     view_groups:
       - label: Jahr
         field: datum
