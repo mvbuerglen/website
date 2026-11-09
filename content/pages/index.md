@@ -1,9 +1,12 @@
 ---
+
 title: Musikverein Bürglen
 bild:
-  - /content/images/gruppenfoto-2025.jpg
-  - /content/images/winterkonzert-2023.jpg
-  - /content/images/winterkonzert-2023-2.jpg
+
+- /content/images/gruppenfoto-2025.jpg
+- /content/images/winterkonzert-2023.jpg
+- /content/images/winterkonzert-2023-2.jpg
+
 ---
 
 Herzlich Willkommen beim Musikverein Bürglen!

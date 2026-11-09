@@ -1,12 +1,15 @@
 ---
+
 title: Winterkonzert 2023
 datum: 2023-12-08T17:00:00+0100
 ort: Pfarrkirche Bürglen
 bild:
-  - /content/images/winterkonzert-2023-flyer.jpg
-  - /content/images/winterkonzert-2023-2.jpg
-  - /content/images/winterkonzert-2023-4.jpg
-  - /content/images/winterkonzert-2023.jpg
+
+- /content/images/winterkonzert-2023-flyer.jpg
+- /content/images/winterkonzert-2023-2.jpg
+- /content/images/winterkonzert-2023-4.jpg
+- /content/images/winterkonzert-2023.jpg
+
 ---
 
 ## HERZLICH WILLKOMMEN

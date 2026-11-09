@@ -1,9 +1,12 @@
 ---
+
 title: Konzert mit Jugendmusik Altdorf
 datum: 2025-05-23T20:00:00+0200
 ort: Aula Gräwimatt, Schattdorf
 bild:
-  - /content/images/gruppenfoto-2025.jpg
+
+- /content/images/gruppenfoto-2025.jpg
+
 ---
 
 ## Konzertprogramm

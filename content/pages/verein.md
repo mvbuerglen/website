@@ -1,9 +1,12 @@
 ---
+
 title: Verein
 bild:
-  - /content/images/gruppenfoto-2025.jpg
-  - /content/images/gruppenfoto-2022.jpg
-  - /content/images/jahreskonzert-2023-1.jpg
+
+- /content/images/gruppenfoto-2025.jpg
+- /content/images/gruppenfoto-2022.jpg
+- /content/images/jahreskonzert-2023-1.jpg
+
 ---
 
 ## Vorstand

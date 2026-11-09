@@ -1,9 +1,12 @@
 ---
+
 title: Kontakt
 bild:
-  - /content/images/gruppenfoto-2025.jpg
-  - /content/images/probe-1.jpg
-  - /content/images/probe-2.jpg
+
+- /content/images/gruppenfoto-2025.jpg
+- /content/images/probe-1.jpg
+- /content/images/probe-2.jpg
+
 ---
 
 ## Kontakt

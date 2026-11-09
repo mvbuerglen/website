@@ -1,8 +1,11 @@
 ---
+
 title: Probeplan
 bild:
-  - /content/images/probe-1.jpg
-  - /content/images/probe-2.jpg
+
+- /content/images/probe-1.jpg
+- /content/images/probe-2.jpg
+
 ---
 
 ## Proben und Auftritte, 2. Hälfte 2026

@@ -174,21 +174,6 @@ main {
   flex-grow: 1;
 }
 
-footer {
-  flex-shrink: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  padding-block: 5rem;
-
-  & nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* Navigation */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -201,6 +186,20 @@ nav a {
   font-weight: 300;
   text-transform: uppercase;
   font-stretch: semi-condensed;
+}
+
+footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-block: 5rem;
+
+  & nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Utilities */

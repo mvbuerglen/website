@@ -1,11 +1,14 @@
 ---
+
 title: Jahreskonzert 2026
 datum: 2026-05-30T20:00:00+0200
 ort: Aula Bürglen
 bild:
-  - /content/images/jahreskonzert-2026-flyer.jpg
-  - /content/images/jahreskonzert-2025-1.jpg
-  - /content/images/jahreskonzert-2025-3.jpg
+
+- /content/images/jahreskonzert-2026-flyer.jpg
+- /content/images/jahreskonzert-2025-1.jpg
+- /content/images/jahreskonzert-2025-3.jpg
+
 ---
 
 Herzlich willkommen zum Jahreskonzert des Musikvereins Bürglen!

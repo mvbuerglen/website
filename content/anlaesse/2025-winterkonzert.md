@@ -1,11 +1,14 @@
 ---
+
 title: Winterkonzert 2025
 datum: 2025-12-08T17:00:00+0100
 ort: Pfarrkirche Bürglen
 bild:
-  - /content/images/winterkonzert-2025-flyer.jpg
-  - /content/images/winterkonzert-2024-1.jpg
-  - /content/images/winterkonzert-2024-2.jpg
+
+- /content/images/winterkonzert-2025-flyer.jpg
+- /content/images/winterkonzert-2024-1.jpg
+- /content/images/winterkonzert-2024-2.jpg
+
 ---
 
 Der Musikverein Bürglen lädt Sie herzlich zum Winterkonzert 2025 ein.

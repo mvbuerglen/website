@@ -1,9 +1,12 @@
 ---
+
 title: Impressum
 bild:
-  - /content/images/jahreskonzert-2024.jpg
-  - /content/images/jahreskonzert-2024-2.jpg
-  - /content/images/jahreskonzert-2023-1.jpg
+
+- /content/images/jahreskonzert-2024.jpg
+- /content/images/jahreskonzert-2024-2.jpg
+- /content/images/jahreskonzert-2023-1.jpg
+
 ---
 
 ## Impressum
